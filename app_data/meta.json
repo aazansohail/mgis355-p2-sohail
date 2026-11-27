@@ -1,0 +1,374 @@
+{
+  "shipped_model": "logistic",
+  "shipped_params": {
+    "C": 0.01
+  },
+  "threshold": 0.13,
+  "cost_fp": 1,
+  "cost_fn": 10,
+  "meeting_cost_usd": 300,
+  "baseline_cutoff_usd": 500000.0,
+  "baseline_stages": [
+    "series-a",
+    "series-b-or-later"
+  ],
+  "train_rows": 6566,
+  "test_rows": 1648,
+  "train_base_rate": 0.15169052695705149,
+  "test_base_rate": 0.11468446601941748,
+  "train_dates": [
+    "2000-01-01",
+    "2008-02-24"
+  ],
+  "test_dates": [
+    "2008-02-25",
+    "2008-12-12"
+  ],
+  "test_auc": 0.6801389659511661,
+  "test_auc_other": 0.6770564748631918,
+  "ranges": {
+    "amount_usd": [
+      15860.62,
+      62716659.99999987
+    ],
+    "n_investors": [
+      1,
+      23
+    ],
+    "company_age_years": [
+      0.0,
+      20.324380561259474
+    ]
+  },
+  "categories": {
+    "stage": {
+      "series-a": 2087,
+      "venture-unlabeled": 1599,
+      "seed-angel": 1440,
+      "series-b-or-later": 1364,
+      "debt": 43,
+      "grant": 21,
+      "other": 12
+    },
+    "category": {
+      "software": 1450,
+      "web": 801,
+      "biotech": 556,
+      "unknown": 447,
+      "mobile": 365,
+      "games_video": 328,
+      "enterprise": 292,
+      "advertising": 269,
+      "hardware": 253,
+      "semiconductor": 246,
+      "public_relations": 235,
+      "ecommerce": 192,
+      "network_hosting": 182,
+      "other": 150,
+      "cleantech": 145,
+      "security": 111,
+      "search": 101,
+      "consulting": 70,
+      "medical": 59,
+      "analytics": 57,
+      "finance": 39,
+      "social": 28,
+      "music": 23,
+      "messaging": 21,
+      "manufacturing": 20,
+      "news": 18,
+      "health": 15,
+      "education": 14,
+      "travel": 13,
+      "nanotech": 10,
+      "transportation": 10,
+      "photo_video": 10,
+      "automotive": 6,
+      "real_estate": 6,
+      "legal": 6,
+      "sports": 6,
+      "hospitality": 5,
+      "fashion": 3,
+      "nonprofit": 2,
+      "government": 1,
+      "local": 1
+    },
+    "country": {
+      "USA": 4200,
+      "other": 769,
+      "GBR": 452,
+      "unknown": 302,
+      "FRA": 223,
+      "CAN": 191,
+      "DEU": 175,
+      "ISR": 170,
+      "IND": 84
+    },
+    "us_state": {
+      "non-US": 2366,
+      "CA": 1979,
+      "US-other": 1064,
+      "MA": 377,
+      "NY": 339,
+      "TX": 188,
+      "WA": 173,
+      "US-unknown": 80
+    }
+  },
+  "weakest_segment": {
+    "segment": "investors recorded",
+    "value": "not recorded",
+    "auc": 0.5331081081081082,
+    "recall": 0.0,
+    "exits": 20,
+    "n": 316
+  },
+  "segments": [
+    {
+      "segment": "investors recorded",
+      "value": "not recorded",
+      "n": 316,
+      "exits": 20,
+      "auc": 0.5331,
+      "recall": 0.0,
+      "meetings_per_100": 0.0
+    },
+    {
+      "segment": "stage",
+      "value": "series-b-or-later",
+      "n": 212,
+      "exits": 35,
+      "auc": 0.5987,
+      "recall": 0.9143,
+      "meetings_per_100": 83.4906
+    },
+    {
+      "segment": "region",
+      "value": "non-US",
+      "n": 689,
+      "exits": 45,
+      "auc": 0.609,
+      "recall": 0.4222,
+      "meetings_per_100": 24.8186
+    },
+    {
+      "segment": "region",
+      "value": "US",
+      "n": 959,
+      "exits": 144,
+      "auc": 0.6461,
+      "recall": 0.8542,
+      "meetings_per_100": 70.3858
+    },
+    {
+      "segment": "category",
+      "value": "all other",
+      "n": 771,
+      "exits": 91,
+      "auc": 0.6553,
+      "recall": 0.7143,
+      "meetings_per_100": 49.8054
+    },
+    {
+      "segment": "stage",
+      "value": "venture-unlabeled",
+      "n": 395,
+      "exits": 24,
+      "auc": 0.6627,
+      "recall": 0.75,
+      "meetings_per_100": 48.1013
+    },
+    {
+      "segment": "amount recorded",
+      "value": "not recorded",
+      "n": 220,
+      "exits": 29,
+      "auc": 0.679,
+      "recall": 0.6552,
+      "meetings_per_100": 42.2727
+    },
+    {
+      "segment": "investors recorded",
+      "value": "recorded",
+      "n": 1332,
+      "exits": 169,
+      "auc": 0.6801,
+      "recall": 0.8402,
+      "meetings_per_100": 63.5135
+    },
+    {
+      "segment": "amount recorded",
+      "value": "recorded",
+      "n": 1428,
+      "exits": 160,
+      "auc": 0.6825,
+      "recall": 0.7688,
+      "meetings_per_100": 52.7311
+    },
+    {
+      "segment": "stage",
+      "value": "seed-angel",
+      "n": 491,
+      "exits": 49,
+      "auc": 0.6851,
+      "recall": 0.5102,
+      "meetings_per_100": 24.6436
+    },
+    {
+      "segment": "stage",
+      "value": "series-a",
+      "n": 518,
+      "exits": 77,
+      "auc": 0.7038,
+      "recall": 0.8442,
+      "meetings_per_100": 66.2162
+    },
+    {
+      "segment": "category",
+      "value": "software",
+      "n": 256,
+      "exits": 26,
+      "auc": 0.7191,
+      "recall": 0.8462,
+      "meetings_per_100": 54.6875
+    },
+    {
+      "segment": "category",
+      "value": "web",
+      "n": 223,
+      "exits": 24,
+      "auc": 0.7711,
+      "recall": 0.8333,
+      "meetings_per_100": 47.5336
+    }
+  ],
+  "random_split_auc": 0.6701397580308719,
+  "leakage_check": [
+    {
+      "rows": "all test rows",
+      "n": 1648,
+      "exits": 189,
+      "auc_with": 0.6801,
+      "auc_without": 0.6471,
+      "drop": 0.0331
+    },
+    {
+      "rows": "recorded within 1 year of the round",
+      "n": 1045,
+      "exits": 137,
+      "auc_with": 0.6901,
+      "auc_without": 0.6473,
+      "drop": 0.0428
+    },
+    {
+      "rows": "recorded 1+ years later (backfilled)",
+      "n": 603,
+      "exits": 52,
+      "auc_with": 0.6411,
+      "auc_without": 0.6231,
+      "drop": 0.018
+    }
+  ],
+  "sensitivity": [
+    {
+      "fn_to_fp_ratio": 2,
+      "threshold": 0.245,
+      "meetings_per_100": 3.5194,
+      "model_cost": 403,
+      "baseline_cost": 1131,
+      "meet_all_cost": 1459,
+      "meet_none_cost": 378,
+      "model_beats_all_others": false
+    },
+    {
+      "fn_to_fp_ratio": 3,
+      "threshold": 0.23,
+      "meetings_per_100": 5.5218,
+      "model_cost": 562,
+      "baseline_cost": 1164,
+      "meet_all_cost": 1459,
+      "meet_none_cost": 567,
+      "model_beats_all_others": true
+    },
+    {
+      "fn_to_fp_ratio": 5,
+      "threshold": 0.195,
+      "meetings_per_100": 14.5024,
+      "model_cost": 824,
+      "baseline_cost": 1230,
+      "meet_all_cost": 1459,
+      "meet_none_cost": 945,
+      "model_beats_all_others": true
+    },
+    {
+      "fn_to_fp_ratio": 7,
+      "threshold": 0.13,
+      "meetings_per_100": 51.335,
+      "model_cost": 1033,
+      "baseline_cost": 1296,
+      "meet_all_cost": 1459,
+      "meet_none_cost": 1323,
+      "model_beats_all_others": true
+    },
+    {
+      "fn_to_fp_ratio": 10,
+      "threshold": 0.13,
+      "meetings_per_100": 51.335,
+      "model_cost": 1174,
+      "baseline_cost": 1395,
+      "meet_all_cost": 1459,
+      "meet_none_cost": 1890,
+      "model_beats_all_others": true
+    },
+    {
+      "fn_to_fp_ratio": 15,
+      "threshold": 0.095,
+      "meetings_per_100": 76.2136,
+      "model_cost": 1371,
+      "baseline_cost": 1560,
+      "meet_all_cost": 1459,
+      "meet_none_cost": 2835,
+      "model_beats_all_others": true
+    },
+    {
+      "fn_to_fp_ratio": 20,
+      "threshold": 0.095,
+      "meetings_per_100": 76.2136,
+      "model_cost": 1466,
+      "baseline_cost": 1725,
+      "meet_all_cost": 1459,
+      "meet_none_cost": 3780,
+      "model_beats_all_others": false
+    },
+    {
+      "fn_to_fp_ratio": 30,
+      "threshold": 0.065,
+      "meetings_per_100": 91.2015,
+      "model_cost": 1562,
+      "baseline_cost": 2055,
+      "meet_all_cost": 1459,
+      "meet_none_cost": 5670,
+      "model_beats_all_others": false
+    },
+    {
+      "fn_to_fp_ratio": 50,
+      "threshold": 0.065,
+      "meetings_per_100": 91.2015,
+      "model_cost": 1722,
+      "baseline_cost": 2715,
+      "meet_all_cost": 1459,
+      "meet_none_cost": 9450,
+      "model_beats_all_others": false
+    }
+  ],
+  "example": {
+    "amount_usd": 5000000,
+    "n_investors": 3,
+    "company_age_years": 2.0,
+    "stage": "series-a",
+    "category": "software",
+    "country": "USA",
+    "us_state": "CA"
+  },
+  "example_p": 0.21835167223805593
+}

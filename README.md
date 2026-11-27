@@ -2,7 +2,7 @@
 
 **One line:** a logistic regression that tells a VC screener whether to take a first meeting with a newly funded startup, by estimating its chance of being acquired or going public within 5 years of its first round. Real data (Crunchbase 2013 Snapshot © 2013, CC BY).
 
-- **App:** [PASTE STREAMLIT URL]
+- **App:** https://mgis355-p2-sohail.streamlit.app
 - **Video:** [PASTE VIDEO LINK]
 - **Repository:** https://github.com/aazansohail/mgis355-p2-sohail
 

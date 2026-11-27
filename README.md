@@ -4,7 +4,7 @@
 
 - **App:** [PASTE STREAMLIT URL]
 - **Video:** [PASTE VIDEO LINK]
-- **Repository:** [PASTE GITHUB URL]
+- **Repository:** https://github.com/aazansohail/mgis355-p2-sohail
 
 ## Results on the held-out 2008 cohort (1,648 startups, 189 exits)
 
